@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="main.css" rel="stylesheet">
+    <title>INTRODUCTION</title>
+</head>
+
+<body>
+<header>
+  <!-- Navbar -->
+
+  <nav class="stroke navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li>
+          <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li>
+          <a class="nav-link" href="#article1">Pakde Gaming</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#article2">Pakde Design</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<!-- end of Navbar -->
+<!-- Jumbotron -->
+<div class="jumbotron jumbotron-fluid text-white">
+  <div class="container">
+    <h1 class="display-4">YOU PLAY? WE GAME!</h1>
+    <p class="lead">This is our celebration for defeating the beast from eorza</p>
+  </div>
+</div>
+<!-- end of jumbotron -->
+</header>
+ 
+<!-- Article1 -->
+<div class="container-fluid">
+  <div class="row">
+    <div id="article1" class="col-md-12">
+      <div class="bg-primary text-center text-white"></div>
+      <h1 class="text-center">Pakde Gaming</h1>
+      <img src="img/logo pakdegaming.png" class="gaming">
+      
+      <p class="art1">
+        Pakde Gaming adalah channel gaming di youtube yang di terbentuk pada tahun 2016. <br/>
+        Channel ini berisi gameplay - gameplay dari beberapa game. <br/>
+        Game yang di mainkan di channel ini yaitu ada Dota2, Monster Hunter World, Tom Clancy's The Division, Ghost Recon Wildlands, dll. <br/>
+        Lambat laun viewers dan subscriber pada channel ini mulai bertambah walaupun sangat lambat pertambahan nya. <br/>
+        Di channel ini juga terdapat video lain nya yaitu Vlog Pribadi pemilik channel ini. <br/>
+      </p>
+      <a onclick="displayResult()" id="pencet" href="https://www.youtube.com/user/Nokiaas34" 
+      class="btn btn-danger" role="button" target="_blank">Link Youtube</a>
+      <h3>Klik tombol di atas buat cek channel nya</h3>
+      <div id="div1"></div>
+    </div>
+
+    <script>
+      function displayResult() {
+    var para = document.createElement("p");
+     var node = document.createTextNode("Terima Kasih Telah Mengunjungi Link nya!");
+    para.appendChild(node);
+
+     var element = document.getElementById("div1");
+     element.appendChild(para);
+      }
+      </script>
+
+<!-- Article2 -->
+
+    <div id="article2" class="col-md-8 mt-2">
+      <div class="bg-primary text-center text-white"></div>
+      <h1 class="text-center">Pakde Design</h1>
+              <img src="img/logo pakdedesing.png" class="design"> 
+              <p class="art2">
+                Pakde Design adalah anak dari channel gaming Pakde Gaming.</br>
+                Pakde Design bergerak pada pembuatan desain apapun, seperti logo, stiker, banner, kalender, brosur dll.
+              </p>
+              <a href="galerikarya.html" 
+              class="btn btn-dark" role="button" target="_blank">Link Galeri</a>
+              <h3>Klik tombol di atas buat cek galeri nya</h3>
+    </div>
+
+<!-- Aside -->
+    
+<div id="aside" class="col-md-4 mt-2">
+  <div class="bg-primary text-center text-white"></div>
+  <h1 class="text-center text-white">About Me</h1>
+  <img src="img/profil.jpeg" id="profile" class="">
+  <br/>
+  <p id="tentang">
+    Nama saya adalah Mahesa Rosmana Putra. <br/>
+    Saya adalah seorang mahasiswa di universitas gunadarma. <br/>
+    Hobi saya adalah bermain game, touring dan adventure. <br/>
+    Saya adalah pemilik gaming channel Pakde Gaming dan Pakde Design. <br/>
+    Awal mula gaming channel ini muncul hanya karena iseng - iseng yang akhirnya diteruskan. <br/>
+  </p>
+</div>
+
+  </div>
+</div>
+
+<!-- footer -->
+<footer class="bg-dark text-white">
+  <div class="container-fluid text-center">
+      <div class="row">
+          <div class="col-lg">
+              <h6>&copy; PakdeGaming. All Rights Reserved</h6>
+          </div>
+      </div>
+  </div>
+</footer>
+<!-- end of footer -->
+
+</body>
+</html>
